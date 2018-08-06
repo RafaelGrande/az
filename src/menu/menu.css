@@ -1,0 +1,38 @@
+section.menu {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.menu__option {
+    width: 100px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.menu__option:hover {
+    color: #333;
+}
+
+.menu__option:hover.menu__option:after {
+    left: 0%;
+    right: 0;
+}
+
+.menu__option:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: blue;
+    bottom: -4.5px;
+    left: 50%;
+    right: 50%;
+    transition-property: left, right;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}

@@ -1,0 +1,20 @@
+.modal__background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.modal__content {
+    max-width: 400px;
+    background-color: #fff;
+    margin: 50px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
